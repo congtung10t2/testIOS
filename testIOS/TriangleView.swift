@@ -39,6 +39,6 @@ class TriangleView : UIView {
     UIGraphicsEndImageContext();
     let imageCI = image.blurCI(radius: AppConfig.radius)
     context.clear(rect)
-    context.draw(imageCI.cgImage!, in: rect)
+    imageCI.draw(in: rect)
   }
 }
